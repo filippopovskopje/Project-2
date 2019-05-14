@@ -1,0 +1,841 @@
+/* ----------------------------------------------FILIP */
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.red {
+  color: red;
+}
+.red-back {
+  background: red;
+}
+.white {
+  color: white;
+}
+.display-none {
+  display: none;
+}
+.mynavbar {
+  padding: 20px 50px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+}
+.activePage {
+  color: red !important;
+  border-top: 2px solid red;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.navbar-toggle > .icon-bar {
+  background-color: white;
+}
+/* ----------------------------------------------Menito na mobilen */
+.mob-menu {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  z-index: 100;
+  display: none;
+  padding-top: 20vh;
+}
+.mob-menu > div {
+  width: 90vw;
+  margin: 0 auto;
+}
+.mob-menu > div > h4 {
+  margin-bottom: 30px;
+  padding: 15px 30%;
+}
+.blok-menu {
+  display: block;
+}
+.none-menu {
+  display: none;
+}
+.iks {
+  color: white;
+  font-size: 25px;
+}
+/* -------------------------------------------------------- */
+#header > ul > li > a {
+  padding: 15px 25px;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+.stairs {
+  height: 600px;
+  width: 100%;
+  background-image: url("../img/Stairs.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stairs-h2 {
+  display: none;
+  text-align: center;
+}
+.stairs-btns {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stairs-btn1,
+.stairs-btn2 {
+  padding: 20px 60px;
+  margin: 10px;
+  display: none;
+}
+.stairs-btn1 {
+  background: white;
+  color: black;
+}
+.stairs-btn1:hover {
+  font-weight: bolder;
+  color: black;
+}
+.stairs-btn2:hover {
+  color: white;
+  font-weight: bolder;
+}
+.stairs-btn1:hover,
+.stairs-btn2:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.clock {
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/clock.png");
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.min-hand,
+.hour-hand {
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+}
+.min-hand {
+  width: 35%;
+  left: 14%;
+}
+.hour-hand {
+  width: 20%;
+  left: 28%;
+}
+.m-top130 {
+  margin-top: 130px;
+}
+.bottom-row {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid black;
+  margin-top: 20px;
+}
+.i-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  font-size: 3rem;
+}
+.i-div > a {
+  margin: 0 20px;
+}
+.p-div {
+  width: 50%;
+  font-size: 1.8rem;
+}
+.team-img {
+  background-image: url("../img/office.jbg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  flex-direction: column;
+}
+.team-div1 {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20vh;
+}
+.team-div1 > ul > li {
+  font-size: 18px;
+  display: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-down-a {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+}
+.arrow-down-a i {
+  font-size: 20px;
+}
+.arrow-down-a:hover {
+  text-decoration: none;
+}
+.line {
+  width: 1px;
+  height: 25rem;
+  margin: -2rem auto 2rem auto;
+  display: none;
+}
+.lightblue {
+  color: lightblue;
+}
+.team-persons {
+  margin-bottom: 35px;
+}
+.team-persons > a > img {
+  width: 100%;
+  height: 265px;
+}
+.team-persons > h4 {
+  color: black;
+  font-weight: bolder;
+  margin: 30px 0;
+}
+.team-persons > h4:hover {
+  color: red;
+  transition: color 0.5s;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* -------------------------modalot */
+.modal-link:hover {
+  cursor: pointer;
+}
+.modal-dialogdiv {
+  width: 100vw;
+  height: 100vh;
+}
+.modal-contentdiv {
+  height: 100%;
+  background: transparent;
+}
+.modal-bodydiv {
+  flex-direction: row;
+  height: 100%;
+}
+.modal-div1,
+.modal-div2 {
+  width: 50%;
+  height: 100%;
+}
+.modal-div1 img {
+  height: 100%;
+  width: 60vw;
+  margin-left: -250px;
+  margin-right: -150px;
+  margin-top: -30px;
+}
+.modal-div2 {
+  padding: 30px;
+  text-align: left;
+  background: white;
+  margin-left: -130px;
+  margin-bottom: -30px;
+  z-index: 50;
+}
+.modal-div2 button {
+  font-size: 50px;
+}
+.modal-div2 div {
+  padding: 70px;
+  line-height: 200%;
+  word-spacing: 5px;
+}
+.modal-div2 > div > p {
+  font-size: 1.8rem;
+}
+.modal-div2 h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.modal-div2 i {
+  font-size: 25px;
+  color: black;
+  margin-top: 20px;
+}
+.small-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+  display: none;
+}
+/* ---------------------------------- */
+.marginTop10vh {
+  margin-top: 10vh;
+}
+.marginBottom10vh {
+  margin-bottom: 10vh;
+}
+.values-div1,
+.values-div2 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.values-div2 > div {
+  width: 80%;
+}
+.fa-plus:hover,
+.fa-minus:hover {
+  cursor: pointer;
+}
+.p-plus {
+  display: none;
+  font-size: 1.6rem;
+  margin: 15px 0;
+}
+.row-service {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.row-service > div {
+  padding: 10vh 5vw 0 5vw;
+}
+.row-service > div > h3 {
+  margin-bottom: 5rem;
+  margin-top: 0;
+}
+.row-service > div > h3:hover,
+.row-service > div > ul > li:hover {
+  cursor: pointer;
+  color: red;
+}
+.row-service > div > ul {
+  list-style: none;
+  font-size: 2rem;
+}
+.row-service > div > ul > li,
+.row-service > div > ul {
+  display: none;
+}
+.row-service > div > ul > li:hover i {
+  color: white;
+}
+.hireUs-row {
+  height: 100vh;
+  background-image: url("../img/hireUs.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hireUs-row > div:first-child {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+.hireUs-row a {
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+.hireUs-row p {
+  margin-top: 30px;
+}
+.hireUs-row hr {
+  display: none;
+}
+.hireUs-row a:hover,
+.hireUs-row a:focus {
+  color: red;
+}
+#opacity-after {
+  opacity: 1;
+}
+.opacity-hover {
+  opacity: 0.6 !important;
+}
+/* -----------------------------------------------------------------------BOBAN */
+.row-banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/fashion.jpeg");
+  background-size: contain;
+  background-position: center;
+  color: white;
+}
+
+.row-banner .title {
+  margin-top: 30vh;
+  padding-left: 5vw;
+  text-align: left;
+}
+.row-banner .title h1 {
+  font-size: 40px;
+}
+.row-banner .title-text {
+  font-size: 28px;
+  color: darkgray;
+}
+.row-banner .meet-the-team {
+  border: 2px solid lightgray;
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 5vh;
+}
+.row-banner .laptop img {
+  width: 100%;
+  margin-top: 64vh;
+  margin-left: -5vw;
+}
+.row-section-one {
+  padding: 15vh 0;
+}
+.section-one-title {
+  display: none;
+}
+.section-one-text {
+  display: none;
+}
+.section-one-title h2 {
+  font-size: 4rem;
+}
+.btn-services {
+  background-color: orangered;
+  padding: 10px 20px;
+  font-weight: bolder;
+  color: white;
+  border-width: 0;
+}
+.red-text {
+  color: orangered;
+}
+
+.row-section-two .section-two-div {
+  border-right: 1px solid lightgray;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5vh;
+}
+
+.row-section-two .section-two-div .more {
+  display: none;
+  color: tomato;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.row-section-two .section-two-div:last-child {
+  border-width: 0px;
+}
+.row-section-two .section-two-div p {
+  margin-top: 2vh;
+  display: none;
+}
+
+.row-section-three {
+  padding: 10vh 0;
+  position: relative;
+}
+.tablet {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  height: 50vh;
+  box-shadow: 5px 5px 15px 5px #000000;
+  width: 90%;
+}
+.btn-tablet {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 2rem;
+}
+button:focus,
+button:hover {
+  outline: none;
+  background: lightgray;
+}
+.btn-up {
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+.btn-down {
+  position: absolute;
+  top: 210px;
+  right: 0;
+}
+.tablet-circle {
+  border: 2px solid lightgray;
+  padding: 20px 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  right: 15%;
+}
+.tablet-screen {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  height: 90%;
+  width: 70%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  overflow: auto;
+}
+.tablet-screen::-webkit-scrollbar {
+  width: 0px;
+}
+.tablet-screen img {
+  width: 100%;
+}
+.row-section-three .section-three-title {
+  padding-left: 5vw;
+}
+.row-section-four {
+  display: flex;
+  padding: 10vh 0;
+}
+.experience-container h4 {
+  margin-top: 70px;
+}
+.flex-column {
+  flex-direction: column;
+}
+.fsize-3 {
+  font-size: 3rem;
+}
+
+/* ----------------------------------RESPONZIVNOST  FILIP */
+@media screen and (max-width: 1345px) {
+  .list-div li {
+    font-size: 1.6rem;
+  }
+  .team-div1 > h2 {
+    font-size: 23px;
+  }
+  .team-div1 > ul > li {
+    font-size: 14px;
+  }
+  .modal-div1,
+  .modal-div2 {
+    height: 90%;
+  }
+  .modal-div2 div {
+    padding: 20px;
+    line-height: normal;
+    word-spacing: normal;
+  }
+
+  /* ________________________________RESPONZIVNOST BOBAN */
+  .row-banner .laptop img {
+    margin-top: 70vh;
+  }
+  .row-banner .meet-the-team {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .row-banner .laptop img {
+    margin: 6vh auto;
+    width: 80%;
+  }
+  .row-section-two .section-two-div .more {
+    display: block;
+  }
+  .row-section-two .section-two-div {
+    border: none;
+  }
+  .row-section-two .section-two-div h4 {
+    font-size: 2.7rem;
+  }
+  .tablet-screen {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-persons > a > img {
+    height: 170px;
+  }
+  .modal-div1 {
+    display: none;
+  }
+  .small-img {
+    display: block;
+  }
+  .modal-div2 {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  /* ________________________________RESPONZIVNOST TABLET BOBAN */
+  .row-banner .laptop img {
+    margin-top: 8vh;
+    width: 90%;
+  }
+  .row-banner {
+    height: 80vh;
+  }
+
+  .row-banner .title {
+    margin-top: 10vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .row-service > div:nth-child(2),
+  .row-service > div:nth-child(3) {
+    padding: 1vh;
+  }
+  .thediv {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .thediv > h3 {
+    font-size: 18px;
+  }
+  .mynavbar {
+    padding: 5px;
+  }
+  .hireUs-row > div:first-child {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+  .hireUs-row > div:first-child h2 {
+    font-size: 25px;
+  }
+  .hireUs-row {
+    height: 130vh;
+  }
+  .hireUs-row hr {
+    display: block;
+  }
+  .clock-row {
+    display: none;
+  }
+  .bottom-row {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100px;
+    justify-content: space-around;
+  }
+  .i-div {
+    font-size: 2.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .p-div {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .team-div1 {
+    padding-top: 13vh;
+    width: 100%;
+  }
+  .team-persons > a > img {
+    height: 250px;
+  }
+  .stairs-btns {
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+  }
+  .modal-div2 {
+    height: 120vh;
+    padding: 30px 10px;
+  }
+  .modal-bodydiv {
+    margin-top: 30px;
+  }
+  /* _______________________RESPONZIVNOST MOBILEN BOBAN */
+  .row-banner .laptop img {
+    margin-top: 5vh;
+    width: 100%;
+  }
+}
+/* ________________________WORK STRANA */
+.cube-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20vh 20vw;
+  position: relative;
+  perspective: 2000px;
+  background-image: url(../img/work.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#cube {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+#cube figure {
+  margin: 0;
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  position: absolute;
+  background: #222;
+  color: white;
+}
+#cube figure div {
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+}
+#cube .front {
+  transform: rotateY(0deg) translateZ(50vw);
+}
+#cube .front .front-img {
+  background-image: url(../img/1.jpg);
+}
+#cube .back {
+  transform: rotateY(180deg) translateZ(50vw);
+  background: darkorange;
+}
+#cube .back .back-img {
+  background-image: url(../img/1.jpg);
+}
+#cube .right {
+  transform: rotateY(90deg) translateZ(50vw);
+  background: dodgerblue;
+}
+#cube .right .right-img {
+  background-image: url(../img/2.jpg);
+}
+#cube .left {
+  transform: rotateY(-90deg) translateZ(50vw);
+  background: cadetblue;
+}
+#cube .left .left-img {
+  background-image: url(../img/3.jpg);
+}
+#cube .top {
+  transform: rotateX(90deg) translateZ(50vw);
+  background: mintgreen;
+}
+#cube .bottom {
+  transform: rotateX(-90deg) translateZ(50vw);
+  background: lavender;
+}
+#cube {
+  transform: translateZ(-50vw);
+}
+#cube {
+  transition: transform 1.5s ease-in-out;
+}
+#cube .cube-text {
+  height: inherit;
+  display: inline-block;
+}
+.button-wrap {
+  position: absolute;
+  bottom: 10px;
+  right: 12.5%;
+  transform: translateX(12.5%);
+}
+article {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+article h3 {
+  text-align: center;
+}
+.button-wrap button {
+  background: white;
+  border: 0px;
+  border-bottom: 3px solid #222;
+  box-shadow: grey 0px 2px 2px 0px;
+  cursor: pointer;
+}
+.button-wrap:hover button:not(:hover) {
+  background: rgba(255, 255, 255, 0.6);
+}
+.button-wrap button:focus {
+  box-shadow: dodgerblue 0px 2px 2px 0px;
+  outline: none;
+}
+@media screen and (max-width: 425px) {
+  #cube .front .front-img,
+  #cube .back .back-img,
+  #cube .right .right-img,
+  #cube .left .left-img {
+    display: none;
+  }
+}
+/* ___________________________________________PROJECT ONE PAGE */
+.p-one-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  position: relative;
+}
+.p-one-banner h2 {
+  color: #fff;
+  z-index: 1;
+  font-size: 5rem;
+  font-weight: bolder;
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.p-one-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-one-text {
+  height: 40vh;
+  padding: 5vh 0;
+}
+
+.p-one-text-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
